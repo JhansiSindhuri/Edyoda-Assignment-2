@@ -1,0 +1,12 @@
+# Python program to get a list sorted in ascending order by the last element in each list
+
+#defining function 'last' which returns last element
+def last(n):
+  return n[-1]
+# Sorting the input list of tuples based on last element
+
+def sort_list_last(tuples):
+  return sorted(tuples, key=last)
+#printing the sorted list of tuples to the console
+print(sort_list_last([(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]))
+
